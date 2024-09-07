@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>NFT</title>
+</head>
+<body>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                workSans: ["Work Sans"]
+              },
+              fontFamily: {
+                spaceMono: ["Space Mono"]
+              }
+            }
+          }
+        }
+      </script>
+
+      <header class="pt-[34px] pb-[34px] bg-[#2B2B2B]">
+        <div class="max-w-[1140px] mx-auto pl-[15px] pr-[15px]">
+            <div class="flex items-center justify-between">
+                <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+                <ul class="navlist flex items-center gap-[40px]">
+                    <button class="close-menu"><img src="./images/close-menu.png"></button>
+                    <li class="navtext font-workSans text-white text-[16px]">Marketplace</li>
+                    <li class="navtext font-workSans text-white text-[16px]">Rankings</li>
+                    <li class="navtext font-workSans text-white text-[16px]">Connect a wallet</li>
+                    <button class="head-btn flex items-center justify-center gap-[12px] w-[152px] h-[60px] bg-[#A259FF] text-white rounded-[20px] font-workSans"><img src="./images/user.svg" alt="user">Sign Up</button>
+                </ul>
+                <button class="hamburger-menu"><img src="./images/hamburger-menu.svg" alt=""></button>
+            </div>
+        </div>
+      </header>
+
+      <section class="bg-[#2B2B2B]">
+        <div class="max-w-[1140px] mx-auto pl-[15px] pr-[15px]">
+            <div class="hero flex items-center gap-[60px]">
+                <div class="hero-bg"></div>
+                <div class="bnt-wrapper">
+                    <h1 class="title text-white font-workSans text-[51px] mb-[20px]">Connect wallet</h1>
+                    <p class="text text-white font-workSans text-[22px] mb-[40px] max-w-[460px]">Choose a wallet you want to connect. There are several wallet providers.</p>
+                    <div>
+                        <button class="hero-btn w-[320px] h-[72px] border-[2px] border-[#A259FF] rounded-[20px] mb-[20px] flex items-center pl-[40px] gap-[12px] text-white text-[22px] font-workSans"><img class="animate-bounce" src="./images/hero-btn-icon1.svg" alt="icon">Metamask</button>
+                        <button class="hero-btn w-[320px] h-[72px] border-[2px] border-[#A259FF] rounded-[20px] mb-[20px] flex items-center pl-[40px] gap-[12px] text-white text-[22px] font-workSans"><img class="animate-bounce" src="./images/hero-btn-icon2.svg" alt="icon">Wallet Connect</button>
+                        <button class="hero-btn w-[320px] h-[72px] border-[2px] border-[#A259FF] rounded-[20px] flex items-center pl-[40px] gap-[12px] text-white text-[22px] font-workSans"> <img class="animate-bounce" src="./images/hero-btn-icon3.svg" alt="icon">Coinbase</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <footer class="bg-[#3B3B3B] pt-[40px] pb-[40px]">
+        <div class="max-w-[1140px] mx-auto pl-[15px] pr-[15px]">
+            <div class="footer-wrapper flex justify-between">
+                <div>
+                    <img src="./images/logo.svg" alt="logo">
+                    <p class="mt-[30px] text-[#CCCCCC] text-[16px] max-w-[225px] mb-[20px]">NFT marketplace UI created with Anima for Figma.</p>
+                    <p class="mt-[30px] text-[#CCCCCC] text-[16px] mb-[15px]">Join our community</p>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="./images/discord-icon.svg" alt="icon">
+                        <img src="./images/youtube-icon.svg" alt="icon">
+                        <img src="./images/twitter-icon.svg" alt="icon">
+                        <img src="./images/instagram-icon.svg" alt="icon">
+                    </div>
+                </div>
+                <div  class="list">
+                    <p class="font-spaceMono text-white text-[22px] mb-[25px]">Explore</p>
+                    <p class="font-workSans text-[#CCCCCC] text-[16px] mb-[20px]">Marketplace</p>
+                    <p class="font-workSans text-[#CCCCCC] text-[16px] mb-[20px]">Rankings</p>
+                    <p class="font-workSans text-[#CCCCCC] text-[16px]">Connect a wallet</p>
+                </div>
+                <div>
+                    <h3 class="text-white text-[22px] mb-[20px] font-spaceMono">Join our weekly digest</h3>
+                    <p class="text-[#CCCCCC] text-[16px] mb-[20px] font-workSans max-w-[310px]">Get exclusive promotions & updates straight to your inbox.</p>
+                    <form>
+                        <input class="w-[250px] h-[60px] bg-white rounded-[20px] p-[20px] placeholder:font-workSans" type="text" placeholder="Enter your email here">
+                        <button class="footer-btn w-[179px] h-[60px] rounded-[20px] bg-[#A259FF] font-workSans text-white text-[16px] relative">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+      <script src="./app.js"></script>
+    
+</body>
+</html>

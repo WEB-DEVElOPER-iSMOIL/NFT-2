@@ -1,0 +1,13 @@
+{
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": "/css",
+            "generateMap": false
+        }
+    ],
+
+    "liveSassCompile.settings.autoprefix": "last 2 versions",
+    "liveServer.settings.port": 5501
+}
